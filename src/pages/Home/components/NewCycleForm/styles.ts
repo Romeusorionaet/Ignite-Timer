@@ -2,14 +2,27 @@ import styled from 'styled-components'
 
 export const FormContainer = styled.div`
   width: 100%;
+
   display: flex;
   align-items: flex;
+  flex-direction: row;
   justify-content: center;
   gap: 0.5rem;
+
   color: ${(props) => props.theme['gray-100']};
   font-size: 1.125rem;
   font-weight: bold;
   flex-wrap: wrap;
+
+  @media (max-width: 800px) {
+    font-size: 1rem;
+    line-height: 2rem;
+
+    width: 70%;
+
+    flex-direction: column;
+    gap: 2rem;
+  }
 `
 const BaseInput = styled.input`
   background: transparent;

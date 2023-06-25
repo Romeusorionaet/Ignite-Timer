@@ -31,4 +31,8 @@ export const HeaderContainer = styled.div`
       }
     }
   }
+
+  @media (max-width: 800px) {
+    margin-bottom: 2rem;
+  }
 `
